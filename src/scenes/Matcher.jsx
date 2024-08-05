@@ -44,11 +44,11 @@ const Matcher = () => {
         }));
         console.log(combinedOrders)
         setOrderBook(combinedOrders)
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error fetching order book:', error);
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
 
@@ -75,11 +75,11 @@ const Matcher = () => {
         }
         console.log(combinedOrders)
         setBatchList(combinedOrders)
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error fetching order book:', error);
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
 
@@ -100,11 +100,11 @@ const Matcher = () => {
       .then(data => {
         console.log("Matching response:", data);
         setTimeout(fetchLimitOrderBook, 500);
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error during matching:', error)
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
 
@@ -121,11 +121,11 @@ const Matcher = () => {
         console.log("Matching response:", data);
         setTimeout(fetchBatchList, 500);
         setTimeout(fetchLimitOrderBook, 500);
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error during matching:', error)
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
 
@@ -141,11 +141,11 @@ const Matcher = () => {
       .then(data => {
         console.log("Matching response:", data);
         setTimeout(fetchBatchList, 500);
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error during matching:', error)
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
 
@@ -175,11 +175,11 @@ const Matcher = () => {
       .then(data => {
         console.log("Matching response:", data);
         setTimeout(fetchBatchList, 500);
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error during matching:', error)
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
 

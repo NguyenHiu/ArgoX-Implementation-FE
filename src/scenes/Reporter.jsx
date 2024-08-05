@@ -57,11 +57,11 @@ const Reporter = () => {
         }
         console.log(combinedOrders)
         setBatchList(combinedOrders)
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error fetching order book:', error);
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
 
@@ -94,11 +94,11 @@ const Reporter = () => {
       .then(data => {
         console.log("Matching response:", data);
         setTimeout(fetchBatch, 500);
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error during matching:', error)
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   }
 

@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import User from "./scenes/User"
 import Matcher from "./scenes/Matcher"
 import SuperMatcher from "./scenes/SuperMatcher"
-import Listener from "./scenes/Listener"
 import Reporter from "./scenes/Reporter"
 import Searcher from "./scenes/Searcher"
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -24,13 +23,12 @@ function App() {
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
+              <Route path="/" element={<Navigate to="/user" />} /> {/* Default route */}
               <Route path="/user" element={<User />} />
               <Route path="/matcher" element={<Matcher />} />
               <Route path="/super_matcher" element={<SuperMatcher />} />
-              <Route path="/listener" element={<Listener />} />
               <Route path="/reporter" element={<Reporter />} />
               <Route path="/searcher" element={<Searcher />} />
-              
             </Routes>
           </main>
         </div>

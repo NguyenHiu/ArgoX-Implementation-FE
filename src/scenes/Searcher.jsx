@@ -31,11 +31,11 @@ const Searcher = () => {
         }));
         console.log(combinedOrders)
         setBatchData(combinedOrders)
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error fetching batches:', error);
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
 
@@ -45,11 +45,11 @@ const Searcher = () => {
       .then(data => {
         console.log("Matching response:", data);
         setTimeout(fetchBatchData, 500);
-        openSnackbar("Success: Batch submitted successfully!", "success");
+        openSnackbar("Successfully!", "success");
       })
       .catch(error => {
         console.error('Error fetching batches:', error);
-        openSnackbar("Error: Failed to submit batch.", "error");
+        openSnackbar("Error", "error");
       });
   };
   
