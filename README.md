@@ -1,7 +1,18 @@
-# React Admin Dashboard
+# ArgoX Protocol Implementation - Interaction DEMO
 
-Build a COMPLETE React Admin Dashboard App | React, Material UI, Data Grid, Light & Dark Mode
+## 1. Introduction
+`ArgoX Protocol` is a decentralized exchange based on Limit Order Book. It combines the Lightning Network (State channel) and a batching mechanism to increase speed and throughput while reducing the gas usage of the exchange. *This is our final university project, and it has not been published yet.*
 
-Video: https://www.youtube.com/watch?v=wYpCWwD1oz0
+This repository serves as the front-end of the interactive demonstration, which uses the []() as the back-end. 
 
-For all related questions and discussions about this project, check out the discord: https://discord.gg/2FfPeEk2mX
+## 2. Execution
+Don't forget to install the dependencies using `npm install`.
+
+Before executing this application, you need to start the service in []() repository to serve as the back-end of this application.
+
+After that, you can run the front-end application using the following command:
+```
+npm start
+```
+
+You can check the following video for the workflow: [Youtube Video](https://www.youtube.com/watch?v=L6DvWfdBZxs)
